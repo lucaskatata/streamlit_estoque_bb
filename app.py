@@ -34,8 +34,9 @@ df['estoque'] = df['estoque'].apply(lambda x: x['saldoVirtualTotal'] if isinstan
 # %%
 # df.to_excel('planilha lucas.xlsx', index=False)
 # %%
+st.set_page_config(layout='wide', page_title='Estoque', page_icon='📦')
 st.title('Estoque')
-sku_selecionado = st.sidebar.selectbox('SKU', df['codigo'])
+sku_selecionado = st.selectbox('SKU', df['codigo'])
 # st.sidebar.markdown(sku_selecionado)
 # sku = st.text_input('sku').strip()
 estoque = df[df['codigo'] == sku_selecionado]['estoque']
