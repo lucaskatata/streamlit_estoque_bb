@@ -40,7 +40,6 @@ sku_selecionado = st.selectbox('SKU', df['codigo'])
 # st.sidebar.markdown(sku_selecionado)
 # sku = st.text_input('sku').strip()
 estoque = df[df['codigo'] == sku_selecionado]['estoque']
-st.dataframe(df)
 if not estoque.empty:
     valor_estoque = int(estoque.values[0])  # Convertendo para inteiro para remover ".0"
     
@@ -53,4 +52,4 @@ if not estoque.empty:
         """, 
         unsafe_allow_html=True
     )
-
+st.dataframe(df)
