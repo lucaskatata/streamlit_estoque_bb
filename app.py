@@ -10,7 +10,7 @@ url = "https://api.bling.com.br/Api/v3/produtos"
 payload = ""
 headers = {
   'Accept': 'application/json',
-  'Authorization': 'Bearer e67593b18dee1a090748242b2a3063d2a7f75ae3',
+  'Authorization': 'Bearer c17266b51e37247636de93bac9a0dfee2987c3be',
   'Cookie': 'PHPSESSID=5t6jov8g01bdg7lhj12hd0h4cn'
 }
 
@@ -40,6 +40,7 @@ sku_selecionado = st.selectbox('SKU', df['codigo'])
 # st.sidebar.markdown(sku_selecionado)
 # sku = st.text_input('sku').strip()
 estoque = df[df['codigo'] == sku_selecionado]['estoque']
+st.dataframe(df)
 if not estoque.empty:
     valor_estoque = int(estoque.values[0])  # Convertendo para inteiro para remover ".0"
     
