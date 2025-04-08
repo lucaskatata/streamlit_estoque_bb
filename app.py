@@ -27,7 +27,7 @@ for pagina in range(2):
 
 
 # %%
-df = pd.DataFrame(lista, columns=['codigo', 'id', 'preco', 'estoque'])
+df = pd.DataFrame(lista, columns=['codigo', 'estoque'])
 df['estoque'] = df['estoque'].apply(lambda x: x['saldoVirtualTotal'] if isinstance(x, dict) else None)
 # df
 
