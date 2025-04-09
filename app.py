@@ -10,7 +10,7 @@ url = "https://api.bling.com.br/Api/v3/produtos"
 payload = ""
 headers = {
   'Accept': 'application/json',
-  'Authorization': 'Bearer c17266b51e37247636de93bac9a0dfee2987c3be',
+  'Authorization': 'Bearer 7be531218382d520cab62c644d8069e18c8a2071',
   'Cookie': 'PHPSESSID=5t6jov8g01bdg7lhj12hd0h4cn'
 }
 
